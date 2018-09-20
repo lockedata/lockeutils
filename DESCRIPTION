@@ -21,5 +21,6 @@ Suggests: covr,
     rmarkdown
 VignetteBuilder: knitr
 Imports: 
-    ggplot2 (>= 3.0.0.9000)
+    ggplot2 (>= 3.0.0.9000),
+    extrafont
 RoxygenNote: 6.1.0.9000
