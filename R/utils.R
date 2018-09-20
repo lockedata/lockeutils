@@ -15,3 +15,18 @@ import_roboto_condensed <- function() {
   )
 
 }
+
+import_contrail_condensed <- function() {
+
+  rb_font_dir <- system.file("fonts", "contrail",
+                             package = "lockeutils")
+
+  suppressWarnings(suppressMessages(extrafont::font_import(rc_font_dir, prompt = FALSE)))
+
+  message(
+    sprintf(
+      "You will likely need to install these fonts on your system as well.\n\nYou can find them in [%s]",
+      rb_font_dir)
+  )
+
+}
