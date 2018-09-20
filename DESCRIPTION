@@ -1,8 +1,16 @@
 Package: lockeutils
-Title: What the Package Does (one line, title case)
+Title: Provides Support for Consistent Plotting and Reporting
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: 
+    c(person(given = "Steph",
+             family = "Locke",
+             role = c("aut", "cre"),
+             email = "first.last@example.com"),
+      person(given = "Maëlle",
+             family = "Salmon",
+             role = "aut",
+             email = "maelle.salmon@yahoo.se"))
+Description: The package provides consistent plotting and reporting templates for the Locke Data team.
 Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -12,3 +20,6 @@ Suggests: covr,
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+Imports: 
+    ggplot2 (>= 3.0.0.9000)
+RoxygenNote: 6.1.0.9000
