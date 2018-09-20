@@ -1,7 +1,10 @@
 
 # from hrbrthemes
 # https://github.com/hrbrmstr/hrbrthemes/blob/beae03c85edfc0f7a7553e6eb967aaf61dd36860/R/roboto-condensed.r#L183
-import_roboto_condensed <- function() {
+#' @title Import Roboto fonts
+#'
+#' @export
+import_roboto <- function() {
 
   rb_font_dir <- system.file("fonts", "roboto",
                              package = "lockeutils")
@@ -16,7 +19,10 @@ import_roboto_condensed <- function() {
 
 }
 
-import_contrail_condensed <- function() {
+#' @title Import Contrail One font
+#'
+#' @export
+import_contrail <- function() {
 
   rb_font_dir <- system.file("fonts", "contrail",
                              package = "lockeutils")
