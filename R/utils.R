@@ -9,7 +9,7 @@ import_roboto <- function() {
   rb_font_dir <- system.file("fonts", "roboto",
                              package = "lockeutils")
 
-  suppressWarnings(suppressMessages(extrafont::font_import(rc_font_dir, prompt = FALSE)))
+  suppressWarnings(suppressMessages(extrafont::font_import(rb_font_dir, prompt = FALSE)))
 
   message(
     sprintf(
@@ -27,7 +27,7 @@ import_contrail <- function() {
   rb_font_dir <- system.file("fonts", "contrail",
                              package = "lockeutils")
 
-  suppressWarnings(suppressMessages(extrafont::font_import(rc_font_dir, prompt = FALSE)))
+  suppressWarnings(suppressMessages(extrafont::font_import(rb_font_dir, prompt = FALSE)))
 
   message(
     sprintf(

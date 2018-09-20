@@ -14,7 +14,7 @@
 #'   theme_ld()
 
 theme_ld <- function(){
-  ld <- ggplot2::theme_minimal(base_family = "Roboto-Bold",
+  ld <- ggplot2::theme_minimal(base_family = "Roboto Thin",
                                base_size = 12)
 
   ld <- ld + theme(legend.background=element_blank())
