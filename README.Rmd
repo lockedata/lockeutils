@@ -75,7 +75,7 @@ ggplot(diamonds[diamonds$color %in% unique(diamonds$color)[1:6],]) +
 
 ## Colours on their own
 
-```{r}
+```{r, cache = FALSE}
 lockeutils::get_ld_colours()
 ```
 

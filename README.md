@@ -83,12 +83,16 @@ ggplot(diamonds[diamonds$color %in% unique(diamonds$color)[1:6],]) +
 
 ``` r
 lockeutils::get_ld_colours()
-#> # A tibble: 3 x 2
+#> # A tibble: 7 x 2
 #>   colour_name colour_hex
 #>   <chr>       <chr>     
-#> 1 orange      #E8830C   
-#> 2 blue        #2165B6   
-#> 3 grey        #4d4d4d
+#> 1 blue        #2165b6   
+#> 2 orange      #e8830c   
+#> 3 teal        #3cb4b8   
+#> 4 red         #cf4729   
+#> 5 green       #34ba17   
+#> 6 pink        #c04aa9   
+#> 7 grey        #4d4d4d
 ```
 
 ## Contributing
