@@ -22,5 +22,7 @@ Suggests: covr,
 VignetteBuilder: knitr
 Imports: 
     ggplot2,
-    extrafont
+    extrafont,
+    scales,
+    tibble
 RoxygenNote: 6.1.0.9000
