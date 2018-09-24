@@ -24,6 +24,8 @@ theme_ld <- function(){
   ld <- ld + theme(legend.position = "bottom")
   ld <- ld  + theme(panel.grid.major = element_blank(),
                     panel.grid.minor = element_blank())
+  ld <- ld + xlab("")
+  ld <- ld + ylab("")
 
   return(ld)
 }
