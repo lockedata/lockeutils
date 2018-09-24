@@ -20,7 +20,7 @@ y = rnorm(30)
 )
 ggplot(df, aes(gp, y)) +
   geom_point() +
-  ggtitle("wow",
-          subtitle = "nice") +
+  ggtitle("wow title LHS great",
+          subtitle = "nice plot") +
   theme_ld()
 }
