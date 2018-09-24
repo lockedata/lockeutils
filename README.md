@@ -12,9 +12,6 @@ team.
 
 ## Installation
 
-The repo is private for now so please authenticate yourself, cf
-<http://happygitwithr.com/github-pat.html#how-do-you-authenticate-yourself>
-
 ``` r
 remotes::install_github("lockedata/lockeutils")
 ```
