@@ -1,4 +1,4 @@
-' Locke Data official colours
+#' Locke Data official colours
 #'
 #' @return A tibble with colours' names and hex codes.
 #' @export

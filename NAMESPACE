@@ -3,4 +3,8 @@
 export(get_ld_colours)
 export(import_contrail)
 export(import_roboto)
+export(scale_color_ld)
+export(scale_colour_ld)
+export(scale_fill_ld)
+export(scale_ld)
 export(theme_ld)
