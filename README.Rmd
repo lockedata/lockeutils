@@ -63,6 +63,14 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_point() +
   theme_ld() +
    scale_color_ld()
+
+ggplot(diamonds[diamonds$color %in% unique(diamonds$color)[1:6],]) + 
+  geom_point(aes(x = carat, 
+                 y = price, 
+                 color = color)) +
+  theme_ld() +
+   scale_color_ld()
+  
 ```
 
 ## Colours on their own

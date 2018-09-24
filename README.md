@@ -67,6 +67,18 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 
 <img src="man/figures/README-unnamed-chunk-2-2.png" width="100%" />
 
+``` r
+
+ggplot(diamonds[diamonds$color %in% unique(diamonds$color)[1:6],]) + 
+  geom_point(aes(x = carat, 
+                 y = price, 
+                 color = color)) +
+  theme_ld() +
+   scale_color_ld()
+```
+
+<img src="man/figures/README-unnamed-chunk-2-3.png" width="100%" />
+
 ## Colours on their own
 
 ``` r
