@@ -26,6 +26,9 @@ theme_ld <- function(){
                     panel.grid.minor = element_blank())
   ld <- ld + xlab("")
   ld <- ld + ylab("")
+  # https://github.com/tidyverse/ggplot2/pull/2749
+  #ld <- ld + theme(geom = element_geom(colour = "#2165B6",
+  #                          fill = "#4d4d4d"))
 
   return(ld)
 }
