@@ -19,6 +19,7 @@ theme_ld <- function(){
 
   ld <- ld + theme(legend.background=element_blank())
   ld <- ld + theme(legend.key=element_blank())
+  ld <- ld + theme(legend.position = "bottom")
 
   return(ld)
 }
