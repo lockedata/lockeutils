@@ -17,7 +17,7 @@
 #'           subtitle = "nice plot") +
 #'   theme_ld()
 
-theme_ld <- function(base_size = 12){
+theme_ld <- function(base_size = 15){
   ld <- ggplot2::theme_minimal(base_family = "Roboto Thin",
                                base_size = base_size)
 
@@ -26,8 +26,8 @@ theme_ld <- function(base_size = 12){
   ld <- ld + theme(legend.position = "bottom")
   ld <- ld  + theme(panel.grid.major = element_blank(),
                     panel.grid.minor = element_blank())
-  ld <- ld + theme(axis.title.y = element_text(""))
-  ld <- ld + theme(axis.title.x = element_text(""))
+  ld <- ld + theme(axis.title.y = element_blank())
+  ld <- ld + theme(axis.title.x = element_blank())
   # https://github.com/tidyverse/ggplot2/pull/2749
   #ld <- ld + theme(geom = element_geom(colour = "#2165B6",
   #                          fill = "#4d4d4d"))
