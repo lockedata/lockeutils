@@ -6,6 +6,10 @@
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Travis build
+status](https://travis-ci.org/lockedata/lockeutils.svg?branch=master)](https://travis-ci.org/lockedata/lockeutils)
+[![Coverage
+status](https://coveralls.io/repos/github/lockedata/lockeutils/badge.svg)](https://coveralls.io/r/lockedata/lockeutils?branch=master)
 
 The goal of lockeutils is to provide some common tools to the Locke Data
 team.
