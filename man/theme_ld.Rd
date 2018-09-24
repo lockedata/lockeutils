@@ -20,5 +20,7 @@ y = rnorm(30)
 )
 ggplot(df, aes(gp, y)) +
   geom_point() +
+  ggtitle("wow",
+          subtitle = "nice") +
   theme_ld()
 }

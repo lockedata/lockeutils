@@ -11,6 +11,8 @@
 #' )
 #' ggplot(df, aes(gp, y)) +
 #'   geom_point() +
+#'   ggtitle("wow title LHS great",
+#'           subtitle = "nice plot") +
 #'   theme_ld()
 
 theme_ld <- function(){
