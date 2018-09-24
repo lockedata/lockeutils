@@ -1,5 +1,7 @@
 #' Locke Data ggplot2 theme
 #'
+#' @param base_size parameter passed to \code{ggplot2::theme_minimal}
+#'
 #' @return ggplot2 theme
 #' @export
 #'
@@ -15,17 +17,17 @@
 #'           subtitle = "nice plot") +
 #'   theme_ld()
 
-theme_ld <- function(){
+theme_ld <- function(base_size = 12){
   ld <- ggplot2::theme_minimal(base_family = "Roboto Thin",
-                               base_size = 12)
+                               base_size = base_size)
 
   ld <- ld + theme(legend.background=element_blank())
   ld <- ld + theme(legend.key=element_blank())
   ld <- ld + theme(legend.position = "bottom")
   ld <- ld  + theme(panel.grid.major = element_blank(),
                     panel.grid.minor = element_blank())
-  ld <- ld + xlab("")
-  ld <- ld + ylab("")
+  ld <- ld + theme(axis.title.y = element_text(""))
+  ld <- ld + theme(axis.title.x = element_text(""))
   # https://github.com/tidyverse/ggplot2/pull/2749
   #ld <- ld + theme(geom = element_geom(colour = "#2165B6",
   #                          fill = "#4d4d4d"))

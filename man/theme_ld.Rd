@@ -4,7 +4,10 @@
 \alias{theme_ld}
 \title{Locke Data ggplot2 theme}
 \usage{
-theme_ld()
+theme_ld(base_size = 12)
+}
+\arguments{
+\item{base_size}{parameter passed to \code{ggplot2::theme_minimal}}
 }
 \value{
 ggplot2 theme
