@@ -75,3 +75,13 @@ lockeutils::get_ld_colours()
 #> 2 blue        #2165B6   
 #> 3 grey        #4d4d4d
 ```
+
+## Contributing
+
+Wanna report a bug or suggest a feature? Great stuff\! For more
+information on how to contribute check out [our contributing
+guide](.github/CONTRIBUTING.md).
+
+Please note that this R package is released with a [Contributor Code of
+Conduct](CODE_OF_CONDUCT.md). By participating in this package project
+you agree to abide by its terms.
