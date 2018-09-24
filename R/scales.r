@@ -44,7 +44,8 @@ scale_fill_ld <- function(aesthetics = "fill", ...) {
 scale_ld <- function(aesthetics, alpha = NA, ...) {
   values <-  c("#2165b6", "#e8830c",
                "#3cb4b8", "#cf4729",
-               "#34ba17", "#c04aa9")
+               "#34ba17", "#c04aa9",
+               "#4d4d4d")
   n <- length(values)
   alpha <- rep_len(alpha, n)
 
