@@ -42,7 +42,9 @@ scale_fill_ld <- function(aesthetics = "fill", ...) {
 #' @export
 #' @usage NULL
 scale_ld <- function(aesthetics, alpha = NA, ...) {
-  values <-  c("#E8830C", "#2165B6", "#4d4d4d")
+  values <-  c("#2165b6", "#e8830c",
+               "#3cb4b8", "#cf4729",
+               "#34ba17", "#c04aa9")
   n <- length(values)
   alpha <- rep_len(alpha, n)
 
