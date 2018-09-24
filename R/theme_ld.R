@@ -1,5 +1,7 @@
 #' Locke Data ggplot2 theme
 #'
+#' @import ggplot2
+#'
 #' @param base_size parameter passed to \code{ggplot2::theme_minimal}
 #'
 #' @return ggplot2 theme
