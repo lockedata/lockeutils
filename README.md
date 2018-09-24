@@ -20,6 +20,8 @@ team.
 remotes::install_github("lockedata/lockeutils")
 ```
 
+And then re-start your R session.
+
 At the first package loading, `lockeutils` should guide you to install
 fonts. We’ll update instructions here based on your experience.
 

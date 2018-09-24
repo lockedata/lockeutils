@@ -27,6 +27,8 @@ The goal of lockeutils is to provide some common tools to the Locke Data team.
 remotes::install_github("lockedata/lockeutils")
 ```
 
+And then re-start your R session.
+
 At the first package loading, `lockeutils` should guide you to install fonts. We'll update instructions here based on your experience.
 
 ## ggplot2 theme
