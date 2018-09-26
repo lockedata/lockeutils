@@ -16,11 +16,13 @@ See [discrete_scale] for more details.}
 This is a qualitative scale with three different colours.
 }
 \examples{
+\dontrun{
 library("ggplot2")
 ggplot(mtcars, aes(factor(cyl), fill = factor(vs))) +
 geom_bar() +
 theme_ld() +
 scale_fill_ld()
+}
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_point() +

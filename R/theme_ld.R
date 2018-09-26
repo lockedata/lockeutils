@@ -8,6 +8,7 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' library("ggplot2")
 #' df <- data.frame(
 #' gp = factor(rep(letters[1:3], each = 10)),
@@ -18,6 +19,7 @@
 #'   ggtitle("wow title LHS great",
 #'           subtitle = "nice plot") +
 #'   theme_ld()
+#'   }
 
 theme_ld <- function(base_size = 15){
   ld <- ggplot2::theme_minimal(base_family = "Roboto Thin",

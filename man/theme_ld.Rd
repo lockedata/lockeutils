@@ -16,6 +16,7 @@ ggplot2 theme
 Locke Data ggplot2 theme
 }
 \examples{
+\dontrun{
 library("ggplot2")
 df <- data.frame(
 gp = factor(rep(letters[1:3], each = 10)),
@@ -26,4 +27,5 @@ ggplot(df, aes(gp, y)) +
   ggtitle("wow title LHS great",
           subtitle = "nice plot") +
   theme_ld()
+  }
 }

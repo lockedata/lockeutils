@@ -17,11 +17,13 @@ scale_color_ld <- scale_colour_ld
 #' @export
 #' @usage NULL
 #' @examples
+#' \dontrun{
 #' library("ggplot2")
 #' ggplot(mtcars, aes(factor(cyl), fill = factor(vs))) +
 #' geom_bar() +
 #' theme_ld() +
 #' scale_fill_ld()
+#' }
 scale_fill_ld <- function(aesthetics = "fill", ...) {
   scale_ld(aesthetics, ...)
 }
