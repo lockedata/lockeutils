@@ -4,5 +4,8 @@ language: R
 sudo: false
 cache: packages
 
+before_script:
+    - sudo cp -r /inst/roboto ~/.local/share/fonts
+
 after_success:
     - Rscript -e 'covr::coveralls()'
