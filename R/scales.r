@@ -36,11 +36,13 @@ scale_fill_ld <- function(aesthetics = "fill", ...) {
 #' @param ... common discrete scale parameters: `name`, `breaks`, `labels`, `na.value`, `limits`, `guide`, and `aesthetics`.
 #'  See [discrete_scale] for more details.
 #' @examples
+#' \dontrun{
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 #'   geom_point() +
 #'   theme_ld() +
 #'    scale_color_ld()
+#'    }•
 #' @export
 #' @usage NULL
 scale_ld <- function(aesthetics, alpha = NA, ...) {

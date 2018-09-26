@@ -23,9 +23,11 @@ geom_bar() +
 theme_ld() +
 scale_fill_ld()
 }
+\dontrun{
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_point() +
   theme_ld() +
    scale_color_ld()
+   }â€¢
 }
