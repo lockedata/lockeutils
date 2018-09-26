@@ -42,7 +42,7 @@ scale_fill_ld <- function(aesthetics = "fill", ...) {
 #'   geom_point() +
 #'   theme_ld() +
 #'    scale_color_ld()
-#'    }•
+#'    }
 #' @export
 #' @usage NULL
 scale_ld <- function(aesthetics, alpha = NA, ...) {

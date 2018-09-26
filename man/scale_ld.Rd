@@ -29,5 +29,5 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_point() +
   theme_ld() +
    scale_color_ld()
-   }â€¢
+   }
 }
