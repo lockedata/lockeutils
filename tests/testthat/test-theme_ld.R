@@ -11,3 +11,20 @@ test_that("theme_ld works", {
   testthat::expect_true(all(attr(ld$axis.title.y, "class") ==
                           c("element_blank", "element")))
 })
+
+test_that("actual plots",{
+  library("ggplot2")
+  set.seed(42)
+  df <- data.frame(
+    gp = factor(rep(letters[1:3], each = 10)),
+    y = rnorm(30)
+  )
+  p <- ggplot(df, aes(gp, y)) +
+    geom_point() +
+    ggtitle("wow title LHS great",
+            subtitle = "nice plot") +
+    theme_ld()
+
+  vdiffr::expect_doppelganger("Basic plot", p)
+
+})
