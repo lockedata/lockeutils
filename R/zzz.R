@@ -12,6 +12,12 @@
     packageStartupMessage("NOTE: Contrail One or Roboto fonts are required to use this package.")
     packageStartupMessage("      Please use lockeutils::import_roboto() to install Roboto and")
     packageStartupMessage("      lockeutils::import_contrail() to install Contrail One")
+    if(interactive()) {
+      switch(menu(c("Yes", "No"), title = "Do you want to index fonts using extrafont::font_import()?") + 1,
+             cat("nothing Done\n"),
+             extrafont::font_import(),
+             "Not indexing")
+    }
   } # nocov end
 
 }
