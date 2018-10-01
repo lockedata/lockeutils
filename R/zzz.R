@@ -8,10 +8,14 @@
   }
 
   fnt <- extrafont::fonttable()
-  if (!any(grepl("Contrail|Roboto", fnt$FamilyName))) {
-    packageStartupMessage("NOTE: Contrail One or Roboto fonts are required to use this package.")
-    packageStartupMessage("      Please use lockeutils::import_roboto() to install Roboto and")
-    packageStartupMessage("      lockeutils::import_contrail() to install Contrail One")
-  } # nocov end
 
+  if(!"Contrail One" %in% fnt$FamilyName){
+    packageStartupMessage("NOTE: Contrail One is required to use this package.")
+    packageStartupMessage("      Please use lockeutils::import_contrail()")
+  }
+
+  if(!"Roboto Thin" %in% fnt$FamilyName){
+    packageStartupMessage("NOTE: Roboto Thin is required to use this package.")
+    packageStartupMessage("      Please use lockeutils::import_roboto()")
+  }
 }
