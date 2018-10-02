@@ -9,7 +9,17 @@ Authors@R:
       person(given = "Maëlle",
              family = "Salmon",
              role = "aut",
-             email = "maelle.salmon@yahoo.se"))
+             email = "maelle.salmon@yahoo.se"),
+      person(given = "David",
+             family = "Parr",
+             role = "aut",
+             email = "DavidRGParr@gmail.com",
+             comment = c(ORCID = "0000-0002-1539-8547")),
+      person(given = "David",
+             family = "Parr",
+             role = "ctb",
+             email = "DavidRGParr@gmail.com",
+             comment = c(ORCID = "0000-0002-1539-8547")))
 Description: The package provides consistent plotting and reporting templates for the Locke Data team.
 Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
