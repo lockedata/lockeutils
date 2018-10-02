@@ -12,11 +12,6 @@ Authors@R:
              email = "maelle.salmon@yahoo.se"),
       person(given = "David",
              family = "Parr",
-             role = "aut",
-             email = "DavidRGParr@gmail.com",
-             comment = c(ORCID = "0000-0002-1539-8547")),
-      person(given = "David",
-             family = "Parr",
              role = "ctb",
              email = "DavidRGParr@gmail.com",
              comment = c(ORCID = "0000-0002-1539-8547")))
