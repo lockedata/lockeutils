@@ -1,9 +1,16 @@
 # from hrbrthemes
 # https://github.com/hrbrmstr/hrbrthemes/blob/beae03c85edfc0f7a7553e6eb967aaf61dd36860/R/zzz.r#L1
+
+is_testing <- function() {
+  identical(Sys.getenv("TESTTHAT"), "true")
+}
+
+
 .onAttach <- function(libname, pkgname) {
 
   if (.Platform$OS.type == "windows")  {
-    if (interactive()) packageStartupMessage("Registering Windows fonts with R")
+    if (interactive() || is_testing())
+      packageStartupMessage("Registering Windows fonts with R")
     extrafont::loadfonts("win", quiet = TRUE)
   }
 
