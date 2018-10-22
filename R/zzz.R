@@ -36,6 +36,6 @@ count_fonts <- function(){
       extrafont::font_import(),
       "Not indexing"
     )
-  }
+  } # nocov end
 }
 
