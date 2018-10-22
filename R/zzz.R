@@ -5,6 +5,9 @@ is_testing <- function() {
   identical(Sys.getenv("TESTTHAT"), "true")
 }
 
+count_fonts <- function(){
+  nrow(extrafont::fonttable())
+}
 
 .onAttach <- function(libname, pkgname) {
 
@@ -14,7 +17,7 @@ is_testing <- function() {
     extrafont::loadfonts("win", quiet = TRUE)
   }
 
-  fnt <- extrafont::fonttable()
+  fnt <- count_fonts()
   if(!"Contrail One" %in% fnt$FamilyName){
     packageStartupMessage("NOTE: Contrail One is required to use this package.")
     packageStartupMessage("      Please use lockeutils::import_contrail()")
@@ -25,7 +28,7 @@ is_testing <- function() {
     packageStartupMessage("      Please use lockeutils::import_roboto()")
   }
 
-  if(nrow(fnt) == 0 & interactive()) {
+  if(count_fonts() == 0 & interactive()) {
     switch(
       menu(c("Yes", "No"),
            title = "Do you want to index fonts using extrafont::font_import()?") + 1,
