@@ -17,7 +17,7 @@ count_fonts <- function(){
     extrafont::loadfonts("win", quiet = TRUE)
   }
 
-  fnt <- count_fonts()
+  fnt <- extrafont::fonttable()
   if(!"Contrail One" %in% fnt$FamilyName){
     packageStartupMessage("NOTE: Contrail One is required to use this package.")
     packageStartupMessage("      Please use lockeutils::import_contrail()")
